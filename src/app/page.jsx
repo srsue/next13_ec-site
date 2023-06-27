@@ -33,7 +33,7 @@ export default function Page() {
       <div className="title">
         <h2>TOTALLY Short Sleeve Shirt</h2>
       </div>
-      <p className="text">テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト テキストテキストテキスト</p>
+      <p className="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam officia molestias eligendi, hic repudiandae itaque beatae illum necessitatibus optio quis sapiente sint suscipit nobis tempora qui quibusdam? Perspiciatis non, magnam saepe adipisci ad pariatur rem magni repudiandae assumenda quia earum fuga cumque consequuntur nulla beatae corporis libero, sit reprehenderit suscipit.</p>
       <p className="price">￥9,999 <small>+tax</small></p>
       <table className="table">
         <tr>
