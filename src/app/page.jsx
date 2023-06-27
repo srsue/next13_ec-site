@@ -92,6 +92,5 @@ export default function Page() {
     <small>xxx &copy; xxxxx</small>
   </div>
 </body>
-
   )
 }
