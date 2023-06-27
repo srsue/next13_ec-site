@@ -6,18 +6,18 @@ export default function Page() {
     <nav className="nav">
       <nav className="navl">
         <ul>
-          <li>ALL</li>
-          <li>NEW</li>
-          <li>VINTAGE</li>
-          <li>CATEGORY</li>
-          <li>LOOKBOOK</li>
-          <li>BLOG</li>
+          <li><a href="/all">ALL</a></li>
+          <li><a href="/new">NEW</a></li>
+          <li><a href="/vintage">VINTAGE</a></li>
+          <li><a href="/category">CATEGORY</a></li>
+          <li><a href="/lookbook">LOOKBOOK</a></li>
+          <li><a href="/blog">BLOG</a></li>
         </ul>
       </nav>
       <nav className="navr">
         <ul>
-          <li>LOGIN</li>
-          <li>CONTACT</li>
+          <li><a href="/login">LOGIN</a></li>
+          <li><a href="/contact">CONTACT</a></li>
         </ul>
       </nav>
     </nav>

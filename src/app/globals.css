@@ -17,6 +17,12 @@ img {
 a {
   text-decoration: none;
   color: #333;
+  display:block;
+}
+
+a:hover{
+  color:blue;
+  background-color: #ddd;
 }
 ul{
   margin:0;
