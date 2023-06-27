@@ -1,27 +1,169 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@charset 'utf-8'
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* common section */
+html {
+  font-size: 100%;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-size: .9rem;
+  color: #777;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul{
+  margin:0;
+  padding:0;
+}
+li {
+  color: #333;
+  font-size: .8rem;
+  list-style:none;
+  /* list-style: inside; */
+}
+
+.wrapper{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.inner{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title{
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: .5rem;
+}
+
+.header{
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.header  h1 img{
+  height: 20px;
+  margin-bottom: 2rem;
+}
+
+.header .nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.header .nav .navl ul,
+.header .nav .navr ul{
+  display: flex;
+}
+.navl li,
+.navr li{
+  margin-right: 1rem;
+}
+
+.main{
+  display: flex;
+}
+
+.main .title{
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  padding: 1.5rem 0;
+  margin-bottom: 1rem;
+}
+.main .image,
+.main .item{
+  width: 50%;
+  padding-top: 2rem;
+}
+
+.main .item{
+  padding-left: 4rem;
+}
+
+.main .text{
+  margin-bottom: 2rem;
+}
+
+small{
+  font-size: .5rem;
+}
+
+.table{
+  margin-top: 2rem;
+  line-height: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.table th,td{
+  width: 33.3%;
+  border-bottom: 1px solid #999;
+  border-right: 1px solid #999;
+}
+
+.table .last td{
+  border-bottom: none;
+}
+
+.table .right+th,
+.table .right+td{
+  color: red;
+  border-right: none;
+}
+
+button{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #333;
+}
+
+button a{
+  color: white;
+}
+
+.size{
+  width: 100%;
+  text-align: center;
+}
+
+.size tr{
+  line-height:2rem
+}
+
+.size th{
+  background-color: #ccc;
+  border: 1px solid #aaa;
+}
+
+.footer{
+  margin-top: 5rem;
+  text-align: center;
+}
+
+@media screen and (max-width:896px){
+  .main{
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+  .main .image,
+  .main .item{
+    width: 100%;
+  }
+  .main .item{
+    margin-top: 2rem;
+    padding: 0;
+  }
 }
